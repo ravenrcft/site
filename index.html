@@ -1,12 +1,223 @@
 <!doctype html>
-<html> 
- <head>
-   <title>site</title>
- </head>
- <body>
-  <h1> Hello world</h1> 
-  <p> just putting up a static page - nothing really to host</p>
-  <p>testing <ins>some</ins> more <del>stuff</del>.</p> 
-  <p><sub>Hehehe</sub> <sup>Hehehe</sup></p>
- </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>rcft.net - Home</title>
+  <meta name="description" content="My stupid blog.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="mySite/assets/img/favicon.png">
+
+  <!-- Goole fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Material icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JS -->
+  <script src="assets/js/bootstrap.js" defer></script>
+  <script src="assets/js/lightbox.js" defer></script>
+  <script src="assets/js/scripts.js" defer></script>
+</head>
+
+<body>
+<a href="#main" class="visually-hidden-focusable">Skip to main content</a>
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top" aria-label="Main">
+    <div class="container">
+      <a href="index.html" class="navbar-brand d-inline-flex text-uppercase">rcft v1.0<i class="material-icons ms-2" aria-hidden="true">donut_large</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="material-icons icon-2x" aria-hidden="true">menu</i>
+      </button>
+      <div class="collapse navbar-collapse text-uppercase" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link">stuff</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">more</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">extra</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <!-- Header -->
+  <div class="container py-5 py-lg-6">
+    <h1 class="display-3">My Projects</h1>
+    <div class="border border-5 border-light w-15 mb-4"></div>
+    <div class="row">
+      <div class="col-lg-10 col-xxl-8">
+        <p class="lead text-light">
+          I've been dabbling in lua, and a little bit of Esperanto.<br>
+          Here's a few of my projects or random things I'm working on.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="container mb-4">
+    <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+      <div class="col-lg-6">
+        <a href="#" class="d-inline-block">
+          <figure class="img-overlay mb-0">
+            <img src="mySite/assets/img/FiveM_Gangland.png" alt="FiveM - Lua project (UNTITLED)" class="img-thumbnail" width="800" height="550">
+            <div class="img-hover">
+              <div class="img-text">View Project</div>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="fw-normal">FiveM - Lua Project (UNTITLED)</h2>
+        <p class="fw-light text-light">
+          I've been an avid watcher of No Pixel for ~2 years but it's impossible to get into their servers.
+          With their lastest release, it has really driven something inside me to create an awesome pvp quest-style rpg.
+          Some kind of gangland where you have to hold, markup / tag, do missions in your terrority.     
+        </p>
+        <a href="#" class="link-underline">View project</a>
+      </div>
+    </div>
+    <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+      <div class="col-lg-6 order-lg-2">
+        <a href="#" class="d-inline-block">
+          <figure class="img-overlay mb-0">
+            <img src="mySite/assets/img/ErisEpoc.png" alt="Eris Epoc (Board game)" class="img-thumbnail" width="800" height="550">
+            <div class="img-hover">
+              <p class="img-text">View Project</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="col-lg-5 order-lg-1">
+        <h2 class="fw-normal">Eris Epoc <br>(Video game) <br>(Board game)</h2>
+        <p class="fw-light text-light">
+          I've had this game idea in my head since watching Mines 'n Craft on Geek & Sundry way back in 2015.
+          They encouraged viewers to an off-site contest where some company was looking for board game ideas. Mine, of course, wasn't selected.
+          But, I've always kept it in the back of my mind and I'm mildly confident I could create the game in Unreal Engine.
+          Fingers crossed. 
+        </p>
+        <a href="#" class="link-underline">View project</a>
+      </div>
+    </div>
+    <div class="row justify-content-lg-between align-items-center gy-4 pb-5 pb-lg-6">
+      <div class="col-lg-6">
+        <a href="#" class="d-inline-block">
+          <figure class="img-overlay mb-0">
+            <img src="mySite/assets/img/StormTracker.png" alt="Storm Tracker (Video Game)" class="img-thumbnail" width="800" height="550">
+            <div class="img-hover">
+              <p class="img-text">View Project</p>
+            </div>
+          </figure>
+        </a>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="fw-normal">Storm Tracker<br>(Video Game)</h2>
+        <p class="fw-light text-light">
+          TBD  
+        </p>
+        <a href="#" class="link-underline">View project</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="bg-info text-dark text-center">
+    <div class="container py-5 py-md-6">
+      <h2>Contact</h2>
+      <p class="lead mb-4">For whatever reason that you'd want to contact me, use this link below</p>
+      <a href="contact.html" class="btn btn-outline-dark">Contact</a>
+    </div>
+  </div>
+</main>
+
+<footer class="bg-light text-dark">
+  <div class="container py-5 py-md-6">
+    <div class="row justify-content-md-between">
+      <div class="col-4 col-md-2">
+        <h2 class="h6">About</h2>
+        <ul class="nav flex-column">
+          <!--
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Team</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Careers</a>
+          </li> 
+          -->
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Blog</a>
+          </li>
+          <!--
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Privacy Policy</a>
+          </li>
+          -->
+        </ul>
+      </div>
+      <div class="col-4 col-md-2">
+        <h2 class="h6 mb-3">Services</h2>
+        <ul class="nav flex-column">
+          <!--
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Branding</a>
+          </li>
+          -->
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Level Design</a>
+          </li>
+          <!--
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Photography</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">UX/UI</a>
+          </li>
+          -->
+        </ul>
+      </div>
+      <div class="col-4 col-md-2">
+        <h2 class="h6 mb-3">Social</h2>
+        <ul class="nav flex-column">
+          <li class="mb-1">
+            <a href="https://cohost.org/ravenrcft" class="link-secondary">Cohost</a>
+          </li>
+          <!--
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Instagram</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Dribbble</a>
+          </li>
+          <li class="mb-1">
+            <a href="#" class="link-secondary">Facebook</a>
+          </li>
+          -->
+        </ul>
+      </div>
+      <div class="col-sm-12 col-md-4 mt-4 mt-md-0">
+        <h2 class="h6 mb-3">rcft.net</h2>
+        <p class="text-secondary">
+          &#9803; 2024 rcft.net<br>
+          Remember the Cause,<br>
+          Fighting the Terror
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
