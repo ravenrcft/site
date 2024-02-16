@@ -25,7 +25,7 @@
   <script src="assets/js/lightbox.js" defer></script>
   <script src="assets/js/scripts.js" defer></script>
   <script type="text/javascript">
-    var time = .01 * 60;
+    var time = 500;
     setInterval(function() {
       var seconds = time % 60;
       var minutes = (time - seconds) / 60;
@@ -77,7 +77,7 @@
       <h1 class="display-4">Redirecting...</h1>
       <div class="border border-3 border-light w-15 my-4"></div>
       <p class="lead text-light">
-        <div class="timer" onload="timer(360)">
+        <div class="timer" onload="timer(1800)">
           I don't have a database. <br>
           So, all form inputs are done on google forms.<br>
           You'll be redirected in... <strong><span id="time"></span></strong><br>
