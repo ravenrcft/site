@@ -25,22 +25,31 @@
   <script src="assets/js/lightbox.js" defer></script>
   <script src="assets/js/scripts.js" defer></script>
   <script type="text/javascript">
-    var time = 500;
-    setInterval(function() {
-      var seconds = time % 60;
-      var minutes = (time - seconds) / 60;
-      if (seconds.toString().length == 1) {
-        seconds = "0" + seconds;
-      }
-      if (minutes.toString().length == 1) {
-        minutes = "0" + minutes;
-      }
-      document.getElementById("time").innerHTML = minutes + ":" + seconds;
-      time--;
-      if (time == 0) {
-        window.location.href = "https://forms.gle/1EyNG8Fe8pPRSHdq5";
-      }
-    }, 1000);
+    function startTimer(duration, display) {
+    var timer = duration,
+            minutes, seconds;
+    
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+    
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+    
+            display.textContent = minutes + ":" + seconds;
+    
+            if (--timer < 0) {
+                timer = duration;
+                window.location.href = "https://forms.gle/1EyNG8Fe8pPRSHdq5"; // Redirect to exit.php
+            }
+        }, 1000);
+    }
+    
+    window.onload = function () {
+        var tenSeconds = 5000, // 30 minutes in seconds
+            display = document.querySelector('#time');
+        startTimer(tenSeconds, display);
+    };
   </script>
 </head>
 
@@ -77,14 +86,12 @@
       <h1 class="display-4">Redirecting...</h1>
       <div class="border border-3 border-light w-15 my-4"></div>
       <p class="lead text-light">
-        <div class="timer" onload="timer(500)">
-          I don't have a database. <br>
-          So, all form inputs are done on google forms.<br>
-          You'll be redirected in... <strong><span id="time"></span></strong><br>
-          <a href="https://forms.gle/1EyNG8Fe8pPRSHdq5/">Click to goto the google forms</a>
-          <hr>
-          <span onclick="history.back()" class="btn btn-sm btn-outline-light mb-3">Click here to go back!</span>
-        </div>
+        I don't have a database. <br>
+        So, all form inputs are done on google forms.<br>
+        You'll be redirected in... <strong><span id="time"></span></strong><br>
+        <a href="https://forms.gle/1EyNG8Fe8pPRSHdq5/">Click to goto the google forms</a>
+        <hr>
+        <span onclick="history.back()" class="btn btn-sm btn-outline-light mb-3">Click here to go back!</span>
       </p>
     </div>
   </div>
