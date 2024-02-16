@@ -40,13 +40,13 @@
     
             if (--timer < 0) {
                 timer = duration;
-                window.location.href = "https://forms.gle/1EyNG8Fe8pPRSHdq5"; // Redirect to exit.php
+                window.location.href = "https://forms.gle/1EyNG8Fe8pPRSHdq5"; // Redirect to forms
             }
         }, 1000);
     }
     
     window.onload = function () {
-        var tenSeconds = 5000, // 30 minutes in seconds
+        var tenSeconds = 10, // 10 seconds til redirect
             display = document.querySelector('#time');
         startTimer(tenSeconds, display);
     };
