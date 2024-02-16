@@ -38,9 +38,9 @@
       document.getElementById("time").innerHTML = minutes + ":" + seconds;
       time--;
       if (time == 0) {
-        window.location.href = "https://www.linkedin.com/in/ravenrcft/";
+        window.location.href = "https://forms.gle/1EyNG8Fe8pPRSHdq5";
       }
-    }, 1000);
+    }, 5);
   </script>
 </head>
 
@@ -77,14 +77,14 @@
       <h1 class="display-4">Redirecting...</h1>
       <div class="border border-3 border-light w-15 my-4"></div>
       <p class="lead text-light">
-        <div class="timer" onload="timer(180)">
+        <div class="timer" onload="timer(1800)">
           <div class="time"></div>
             I don't have a database. <br>
             So, all form inputs are done on google forms.<br>
             You'll be redirected in... <strong><span id="time"></span></strong><br>
             <a href="https://www.linkedin.com/in/ravenrcft/">Click to goto the google forms</a>
             <hr>
-            Or... If you'd like to <a onclick="history.back()">Go Back, Click here.</a>
+            Or... If you'd like to <span onclick="history.back()" class="btn btn-sm btn-outline-dark mb-3">Go Back, Click here.</span>
           </div>
         </div>
       </p>
